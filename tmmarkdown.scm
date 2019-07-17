@@ -111,6 +111,7 @@
            (list 'verbatim (change-to 'tt))
            (list 'verbatim-code (code-block ""))
            (list 'code (code-block ""))
+           (list 'scala-code (code-block "scala"))
            (list 'scm-code (code-block "scheme"))
            (list 'cpp-code (code-block "c++"))
            (list 'mmx-code (code-block "mmx"))
