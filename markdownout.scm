@@ -179,10 +179,10 @@
 (define (md-header n)
   (lambda (x)
     (with-global num-line-breaks 0
-      (with res (string-concatenate
+      (with res (md-string (string-concatenate
                  `(,@(make-list n "#")
                    " "
-                   ,@(map serialize-markdown (cdr x))))
+                   ,@(map serialize-markdown (cdr x)))))
             (if (> n 4)  ; Special handling of TeXmacs <paragraph>
                 (string-append res " ")
                 res)))))
